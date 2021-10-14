@@ -11,12 +11,8 @@
         function redirect() {
             var url = new URL(window.location.href);
             var r = url.searchParams.get("r");
-            if (r) {
-                setTimeout(() => {
+            console.log(r);
 
-                    window.location.replace(r);
-                }, 1000)
-            }
         }
     </script>
 </head>
