@@ -12,7 +12,11 @@
             var url = new URL(window.location.href);
             var r = url.searchParams.get("r");
             console.log(r);
-
+            if (r) {
+                setTimeout(function () {
+                    window.location.href=r;
+                }) 
+            }
         }
     </script>
 </head>
