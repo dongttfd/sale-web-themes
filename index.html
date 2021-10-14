@@ -9,12 +9,14 @@
     <title>Web Themes Sale</title>
     <script>
         function redirect() {
-            setTimeout(() => {
-                var url = new URL(window.location.href);
-                var r = url.searchParams.get("r");
-                window.location.replace(r);
-            }, 1000)
+            var url = new URL(window.location.href);
+            var r = url.searchParams.get("r");
+            if (r) {
+                setTimeout(() => {
 
+                    window.location.replace(r);
+                }, 1000)
+            }
         }
     </script>
 </head>
